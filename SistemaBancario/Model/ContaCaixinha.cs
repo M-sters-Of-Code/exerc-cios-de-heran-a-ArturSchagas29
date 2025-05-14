@@ -13,7 +13,7 @@ namespace SistemaBancario.Model
         public override void Depositar(decimal valor)
         {
             if (valor <= 1)
-                throw new ArgumentOutOfRangeException("O valor do deposito deve ser maior que 1 ");
+                throw new ArgumentOutOfRangeException("O valor do deposito deve ser maior que  ");
             base.Depositar(valor + 1); 
         }
         public override void Sacar(decimal valor)
